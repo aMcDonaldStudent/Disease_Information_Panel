@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.radio-group {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 5; /* doesn't let radio buttons get hidden */
+}
+
+.radio-group label {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.tab {
+  display: none;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.tab.active {
+  display: block;
+}
+
+/* the full bar */
+.full_logo {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  margin-top: 1rem;
+}
+
+/* the big bar */
+.big_orange {
+  background-color: #ffb900;
+  width: 40%;
+  height: 125px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+/* small bar */
+.small_orange {
+  background-color: #ffce00;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  position: absolute;
+  top: 25px;
+  z-index: 1;
+}
+
+/* keeps content safe */
+.content-box {
+    background-color: rgba(207, 207, 207, 0.925);
+    padding: 20px;
+}
